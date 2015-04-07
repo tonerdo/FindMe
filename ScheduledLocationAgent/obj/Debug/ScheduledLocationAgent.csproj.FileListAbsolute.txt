@@ -1,0 +1,4 @@
+C:\Users\Toni\Documents\Visual Studio 2013\Projects\FindMe\ScheduledLocationAgent\Bin\Debug\ScheduledLocationAgent.dll
+C:\Users\Toni\Documents\Visual Studio 2013\Projects\FindMe\ScheduledLocationAgent\Bin\Debug\ScheduledLocationAgent.pdb
+C:\Users\Toni\Documents\Visual Studio 2013\Projects\FindMe\ScheduledLocationAgent\obj\Debug\ScheduledLocationAgent.dll
+C:\Users\Toni\Documents\Visual Studio 2013\Projects\FindMe\ScheduledLocationAgent\obj\Debug\ScheduledLocationAgent.pdb

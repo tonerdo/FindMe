@@ -1,0 +1,23 @@
+﻿<phone:PhoneApplicationPage x:Name="splash"
+    x:Class="FindMe.Splashscreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" Background="White">
+    <Grid HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="480" Background="White">
+        <Image HorizontalAlignment="Center" Height="158" Margin="0" VerticalAlignment="Center" Width="218" Source="/Assets/intel.jpg" Stretch="UniformToFill"/>
+        <TextBlock TextWrapping="Wrap" Text="Find Me" FontSize="36" Margin="50,300,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe WP Light" Foreground="#FF222222" Height="51" Width="129"/>
+        <Image HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="80" Source="/Assets/Navigation.png" Margin="0,305,130,0"/>
+    </Grid>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+</phone:PhoneApplicationPage>

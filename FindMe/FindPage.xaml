@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:maps="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps" x:Name="findPage"
+    x:Class="FindMe.FindPage"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" Loaded="findPage_Loaded">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar x:Name="appBar">
+            <shell:ApplicationBarIconButton x:Name="abDirections" IconUri="/Assets/AppBar/next.png" IsEnabled="True" Text="directions" Click="abDirections_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <maps:Map x:Name="map" Margin="0,0,0,72" Grid.RowSpan="2"/>
+        <StackPanel Height="100" Margin="0" Grid.RowSpan="2" VerticalAlignment="Top" Background="Black" Opacity="0.7">
+            <TextBlock TextWrapping="Wrap" Text="Find Me" FontSize="50" Margin="20,16,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Segoe WP Light"/>
+            <ProgressBar x:Name="pbLoading" Height="10" Foreground="White" IsIndeterminate="True"/>
+        </StackPanel>
+        <TextBlock x:Name="tbTime" HorizontalAlignment="Left" Margin="5,0,0,15" Grid.Row="1" TextWrapping="Wrap" Text="Location as at: " VerticalAlignment="Bottom" FontSize="26" FontFamily="Segoe WP Light"/>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
